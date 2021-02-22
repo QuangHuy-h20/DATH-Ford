@@ -1,0 +1,68 @@
+
+//variable color
+$color-white-0: #fff; //default
+$color-white-1: rgb(255, 255, 255);
+$color-blue-0: #0276b3;
+$color-blue-1: #102b4e;
+$color-blue-2:#2861a4;
+$color-blue-3: rgb(2, 118, 179);
+$color-blue-4: rgba(6,120,188,0.9);
+$color-gray-0: #333;//default
+$color-gray-1: #f3f3f3;
+$color-gray-2:#a7a7a7;
+$color-gray-3:#555;
+$color-gray-4:rgba(85,85,85,0.8);
+$color-blue-4:#3c5b99;
+$color-blue-5:#1da2f3;
+$color-red-0:rgb(217,46,20);
+$color-red-1:#ff0100;
+$color-pink:#dc2c75;
+
+$color-trans:transparent;
+
+// variable font-size
+$fs-0: 14px; //default
+$fs-1: 12px;
+$fs-2: 16px;
+$fs-3: 20px;
+$fs-4: 42px;
+$fs-5: 60px;
+
+//variable margin
+$mg-0: 2px;
+$mg-2: 5px;
+$mg-3: 10px;
+$mg-4: 15px;
+$mg-5: 20px;
+
+//variable border-radius
+$border-radius: 2px;
+
+//variable padding
+$pd-0: 5px; //default
+$pd-1: 8px;
+$pd-2: 10px;
+$pd-3: 15px;
+$pd-4: 20px;
+
+
+//variable line-height
+$line-height-0: 1.43; //default
+
+
+//variable font-weight
+$fw-normal: 400;
+$fw-bold-0: 500;
+$fw-bold-1: 700;
+
+
+
+//break points
+$breakpoints:(
+    'extra-large': 1200px,
+    'large' : 992px,
+    'medium' : 768px 
+    // 767.98px
+    ,
+    'small' : 576px,
+)

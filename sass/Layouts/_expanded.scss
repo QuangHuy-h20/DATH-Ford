@@ -1,0 +1,38 @@
+.expanded {
+    padding-top: $pd-4;
+
+    .expanded__header {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        position: relative;
+
+        .expanded__title {
+            margin: $mg-5 0 $mg-3 0;
+            letter-spacing: 1px;
+            @include styleText($color-gray-0, $fs-4, $fw-normal);
+        }
+
+        .expanded__detail{
+            @include styleText($color-gray-0, $fs-2, $fw-normal);
+
+        }
+        .btn-wrapper{
+            a{
+                margin-top: $mg-5 + 25px;
+            }
+            .btn-text {
+                @include styleText($color-white-0, $fs-2, $fw-normal);
+            }
+        }
+    }
+}
+
+@include responsive("medium"){
+    .expanded__title{
+        font-size: 30px !important;
+    }
+    .expanded__detail{
+        font-size: 14px !important;
+    }
+}
