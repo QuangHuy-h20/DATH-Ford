@@ -90,7 +90,6 @@
 .btn-custom{
     min-height: 50px;
     width: 270px;
-    border: none;
     line-height: 1.25;
     padding: $pd-3 $pd-4;
     text-align: center;
@@ -103,9 +102,9 @@
     &:hover {
         background-color: $color-white-0;
         border: 1px solid #0276b3;
-        color: #fff;
-        span {
-            color: $color-blue-1;
+        color: $color-blue-1;
+        .btn-text {
+            color: $color-blue-1 !important;
         }
     }
 }
@@ -154,3 +153,4 @@
         }
     }
 }
+

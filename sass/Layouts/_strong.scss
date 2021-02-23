@@ -15,6 +15,10 @@
             margin: 0 auto 2rem auto;
             padding-top: 10px;
             position: relative;
+            span{
+                letter-spacing:.5px;
+                @include styleText($color-gray-0, $fs-2, $fw-normal);
+            }
         }
     }
 
