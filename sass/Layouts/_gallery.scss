@@ -64,6 +64,12 @@
             .hidden {
                 display: block;
             }
+
+            #hide-1,
+            #hide-2,
+            #hide-3 {
+                display: none;
+            }
         }
 
         .flexbox {
@@ -127,22 +133,28 @@
 
         }
     }
-    .gallery-view{
+
+    .gallery-view {
         background-color: $color-blue-0;
         width: 100%;
         text-align: center;
         padding: $pd-3 0;
-        cursor: pointer;    
-        .view-all{
-            display: inline;
-            @include styleText($color-white-0, $fs-3 + 4, $fw-normal);
+        cursor: pointer;
 
-        }
-        .view-less{
-            display: none;
-        }
+        .gallery-toggle {
+            
+            margin-bottom: 0;
+            .view-all {
+                display: inline;
+                @include styleText($color-white-0, $fs-3 + 4, $fw-normal);
+            }    
+            .view-less {
+                display: none;
+                @include styleText($color-white-0, $fs-3 + 4, $fw-normal);
+            }
+        }        
     }
-    .mobile{
+    .mobile {
         display: none;
     }
 }
@@ -160,28 +172,35 @@
                 display: none;
             }
         }
+
         .lg-container,
         .sm-container,
         .md-container {
             width: 100% !important;
         }
-        .gallery-label-container{
+
+        .gallery-label-container {
             padding: 5% !important;
-            .txt{
+
+            .txt {
                 font-size: $fs-2 !important;
             }
-            .icon-txt{
+
+            .icon-txt {
                 font-size: $fs-3 !important;
             }
         }
+
         .small-item {
             width: 100% !important;
         }
+
         .hidden {
             display: none !important;
         }
     }
-    .mobile{
+
+    .mobile {
         display: block !important;
-    }    
+    }
 }

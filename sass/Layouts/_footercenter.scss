@@ -1,0 +1,38 @@
+.footer_center {
+    background-color: $color-black-2;
+    padding: 50px 0;
+
+    .footer_center_content {
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+        padding-right: 100px;
+      
+        .item {
+            padding-right: 50px;
+            // border: 1px solid blue;
+            span {
+                @include styleText($color-white-0, $fs-2, $fw-normal);
+            }
+
+            .list {
+                padding-top: 25px;
+
+                li {
+                    // border: 1px solid red;
+                    line-height: 1.5rem;
+                    padding-right: 100px;
+                    padding: 3px 0;
+                    a {
+                        // border: 1px solid;
+                        padding: 3px 0;
+                        @include styleText($color-gray-2, 15px, $fw-normal);
+                        &:hover {
+                            color: $color-white-0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -633,6 +633,12 @@ header .ford-container .ford-navbar-bottom .header__bottom .main__menu .utility_
   display: block;
 }
 
+.gallery .gallery__container .flex-order-4 #hide-1,
+.gallery .gallery__container .flex-order-4 #hide-2,
+.gallery .gallery__container .flex-order-4 #hide-3 {
+  display: none;
+}
+
 .gallery .gallery__container .flexbox {
   display: flex;
   flex-wrap: wrap;
@@ -705,15 +711,22 @@ header .ford-container .ford-navbar-bottom .header__bottom .main__menu .utility_
   cursor: pointer;
 }
 
-.gallery .gallery-view .view-all {
+.gallery .gallery-view .gallery-toggle {
+  margin-bottom: 0;
+}
+
+.gallery .gallery-view .gallery-toggle .view-all {
   display: inline;
   color: #fff;
   font-size: 24px;
   font-weight: 400;
 }
 
-.gallery .gallery-view .view-less {
+.gallery .gallery-view .gallery-toggle .view-less {
   display: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
 }
 
 .gallery .mobile {

@@ -1,0 +1,37 @@
+.aigbag_content{
+    background-color: $color-gray-5;
+
+    padding-top: 40px;
+    padding-bottom: 70px;
+    .airbag_center{
+        text-align: center;
+        h1{
+            @include styleText($color-red-0, $fs-4, $fw-normal);
+            padding-bottom: $pd-4;
+        }
+        a{
+            margin-top: $mg-2;
+            display: inline-block;
+            .btn-learn-more{
+                width: 270px;    
+                line-height: 1.25;
+                padding: $pd-3 $pd-4;
+                letter-spacing: 1px;
+
+                span{
+                    @include styleText($color-white-0, $fs-2, $fw-normal);
+                }
+                &:hover{
+                    span{
+                        @include styleText($color-red-0, $fs-2, $fw-normal);
+                    }
+                }
+             
+            } 
+         
+        }
+    }
+
+
+
+}
