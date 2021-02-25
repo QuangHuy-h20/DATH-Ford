@@ -56,12 +56,10 @@
 
         .flex-order-4 {
             order: 4;
-
             .small-item {
                 width: 50%;
             }
-
-            .hidden {
+            .hidden{
                 display: block;
             }
         }
@@ -133,13 +131,14 @@
         text-align: center;
         padding: $pd-3 0;
         cursor: pointer;    
-        .view-all{
-            display: inline;
+        .gallery-toggle{
             @include styleText($color-white-0, $fs-3 + 4, $fw-normal);
-
-        }
-        .view-less{
-            display: none;
+            .view-all{
+                display: inline;
+            }
+            .view-less{
+                display: none;
+            }
         }
     }
     .mobile{
@@ -177,9 +176,9 @@
         .small-item {
             width: 100% !important;
         }
-        .hidden {
-            display: none !important;
-        }
+    }
+    .hidden{
+        display: none;
     }
     .mobile{
         display: block !important;

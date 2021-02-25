@@ -6,11 +6,10 @@ header {
         position: fixed;
         z-index: 999;
         max-width: 1440px;
-
+        background-color: #fff;
+        width: 100%;
 
         .ford-navbar-top {
-            width: 100%;
-
             .header__top {
                 width: 100%;
                 background-color: $color-gray-1;
@@ -21,7 +20,6 @@ header {
 
                 .header__left,
                 .header__right {
-
                     .ford-item {
                         padding-left: 0;
 
@@ -90,10 +88,10 @@ header {
             min-height: 80px;
 
             .header__bottom {
-                height: 80px;
-                .navbar-logo{
+                .navbar-logo {
                     margin-right: 45px;
                 }
+
                 .brand-logo {
                     background: transparent url(../../img/logo.webp) no-repeat -200px 0;
                     width: 93px;
@@ -101,13 +99,18 @@ header {
                     background-size: 400px 200px;
                     display: inline-block;
                     padding: 0;
-                    margin: 6px 0 0 0;
                 }
 
                 .main__menu {
                     justify-content: space-between;
                     flex: 1 1 auto;
-                    
+                    flex-flow: row nowrap;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-content: center;
+                    align-items: center;
+                    padding-right: 0;
+                    padding-left: 0;
 
                     .vehicle__menu {
                         .veh__item {
@@ -124,7 +127,7 @@ header {
 
                         .user-icon,
                         .utility__text {
-                            
+
                             padding: 0 5px;
                             @include styleText($color-blue-0, $fs-0 - 1, $fw-bold-0);
                         }
@@ -156,9 +159,10 @@ header {
         .ford-navbar-top,
         .ford-navbar-bottom {
             display: none;
-         
+
         }
-        .navbar-logo{
+
+        .navbar-logo {
             margin-top: $mg-4;
         }
 
@@ -166,15 +170,10 @@ header {
             display: block;
         }
     }
-    .container-pad {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
 }
 
-@include responsive("medium") {
-    .container-pad {
-        padding-left: 25px;
-        padding-right: 25px;
-    }   
+@include responsive("small") {
+    header {
+        min-height: 70px;
+    }
 }
