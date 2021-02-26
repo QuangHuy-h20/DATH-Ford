@@ -1,0 +1,65 @@
+.social {
+    .social_content {
+        padding-bottom: 50px;
+
+        background-color: $color-gray-6;
+
+        .top {
+            padding-top: 30px;
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            .language {
+                a {
+                    @include styleText($color-blue-0, 13px, $fw-normal);
+                    padding: 10px 10px;
+                    border: 1px solid red;
+                    i {
+                        color: #2096cd;
+                        margin-right: 11px;
+                        font-size: $fs-3;
+                    }
+                    span {
+                        text-decoration: underline;
+                    }
+                    &:hover {
+                        color: $color-blue-1;
+                    }
+                    &:hover i {
+                        color: $color-blue-1;
+                    }
+                }
+            }
+
+            .navbar-brand {
+                .navbar-brand {
+                    .navbar-brand {
+                        background: transparent url(../../img/logo.webp) no-repeat -150px 0;
+                        width: 73px;
+                        height: 26px;
+                        background-size: 300px 150px;
+                        display: inline-block;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .bot {
+        a {
+            @include styleText($color-gray-3, 13px, $fw-normal);
+            &:hover {
+                color: $color-blue-1;
+            }
+        }
+        .navbar {
+            .navbar-bot {
+                padding-top: 5px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}

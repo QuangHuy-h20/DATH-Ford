@@ -1,8 +1,8 @@
-.footer_get {
+.info {
     background-color: $color-blue-1;
 
     padding: 30px 0;
-    .footer_get_content {
+    .info_content {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -14,7 +14,7 @@
                 a {
                     margin-right: 80px;
                     padding-right: 20px;
-                    padding-top: 10px;
+                    padding-top: 14px;
                     padding-bottom: 20px;
                     border: transparent 1px solid;
                     &:focus {
