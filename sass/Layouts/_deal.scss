@@ -44,8 +44,12 @@
     .deal__content{
         .content__title {
             h2{
-                font-size: 30px !important;
-
+                font-size: $fs-3 + 10 !important;
+            }
+        }
+        .content__detail{
+            span{
+                font-size: $fs-3 !important;
             }
         }
     }

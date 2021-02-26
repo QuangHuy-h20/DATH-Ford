@@ -1,0 +1,38 @@
+.residents{
+    text-align: center;
+    background-color: $color-blue-7;
+    padding-top: $pd-4;
+    letter-spacing: 1px;
+    h2{
+        padding: $pd-4 0 $pd-2;
+        @include styleText($color-white-0, $fs-4, $fw-normal);
+    }
+    .description{
+        span{
+            @include styleText($color-white-0, $fs-2, $fw-normal);
+            a{
+                color: $color-blue-8;
+            }
+        }
+    }
+    .btn-wrapper{
+        padding-bottom: 2rem;
+        .full-width{
+            margin-top: $mg-3;
+            width: auto;
+            min-width: 270px;
+        }
+    }   
+}
+
+
+@include responsive("medium"){
+    h2{
+        font-size: $fs-3 + 4 !important;
+    }
+    .description{
+        span{
+            font-size: $fs-0 !important;
+        }
+    }
+}

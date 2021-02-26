@@ -1,37 +1,30 @@
-.aigbag_content{
-    background-color: $color-gray-5;
-
-    padding-top: 40px;
-    padding-bottom: 70px;
-    .airbag_center{
-        text-align: center;
-        h1{
-            @include styleText($color-red-0, $fs-4, $fw-normal);
-            padding-bottom: $pd-4;
-        }
-        a{
-            margin-top: $mg-2;
-            display: inline-block;
-            .btn-learn-more{
-                width: 270px;    
-                line-height: 1.25;
-                padding: $pd-3 $pd-4;
-                letter-spacing: 1px;
-
-                span{
-                    @include styleText($color-white-0, $fs-2, $fw-normal);
-                }
-                &:hover{
-                    span{
-                        @include styleText($color-red-0, $fs-2, $fw-normal);
+.airBag{
+    .airBar-content{
+        background-color: $color-gray-6;
+        text-align: center;      
+        padding-top: $pd-4; 
+        .airBag-header{
+            h1{
+                @include styleText($color-red-0, $fs-4, $fw-normal);
+                margin: $mg-5 0 $mg-3;
+            }
+            a{
+                margin-top: 4rem;
+                display: inline-block;
+                .btn-custom{
+                    &:hover{
+                        span{
+                            color: $color-red-0 !important;
+                        }
                     }
-                }
+                } 
              
-            } 
-         
+            }
         }
     }
-
-
-
+}
+@include responsive("medium"){
+    h1{
+        font-size: $fs-3 + 4 !important;
+    }
 }

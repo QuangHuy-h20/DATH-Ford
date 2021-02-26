@@ -1,0 +1,147 @@
+footer{
+    .search{
+        background-color: $color-gray-0;
+        padding: $pd-4 + 10 0;
+        .search-content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;            
+            .input-group{
+                width: 300px;
+                i{
+                    padding-top: $pd-2 + 1;
+                    
+                    @include styleText($color-white-0, 24px, $fw-bold-1);
+                }
+                .form-control{        
+                    font-size: 24px;
+                    background-color: $color-gray-0;
+                    border:$color-gray-0;
+                    color: $color-white-0;
+                    padding:0 0 0 $pd-2;
+                    &:focus{
+                        box-shadow: none;
+                    }
+                }
+                ::placeholder{             
+                    @include styleText($color-white-0, $fs-3 + 4, $fw-normal);
+                } 
+            }
+        }
+        .search-text{
+            span{
+                vertical-align: middle;
+                padding-right: $pd-0;
+                @include styleText($color-white-0, $fs-0 , $fw-bold-1);
+            }
+            .list-inline{
+                display: inline-block;
+                margin-bottom: 0;
+                vertical-align: middle;
+                >li{
+                    display: inline-block;
+                    padding: 5px 0;
+                    a{ 
+                        @include styleText($color-gray-2, $fs-0 , $fw-normal);
+                        padding-left: $pd-1;
+                        &:hover{
+                            color:$color-white-0;
+                        }
+                    }
+                }
+            }           
+        }
+    }
+    .center{
+        background-color: $color-gray-7;
+        .navbar-center{
+            border: 1px solid $color-gray-8;
+            padding: 25px 0 90px;
+            .menu{
+                width: 100%;   
+                display: flex;
+                .primary{
+                    width: 40%;
+                    display:flex;
+                    justify-content: space-between;
+                    margin: 0 auto;
+                    .vehicles,.shop{
+                        height:auto;
+                        width: 50%;
+                        padding-left: 0;
+                        .list-heading{
+                            padding: 25px 0 18px;
+                            @include styleText($color-white-0, $fs-2, $fw-normal);
+                            .text{
+                                display:inline-block;
+                                vertical-align: middle;
+                            }
+                        }
+                        .navbar-nav{                            
+                            padding-top: 0;
+                            li{                                
+                                padding: $pd-0 $pd-4 +5 $pd-0 0;
+                                a{                                    
+                                    @include styleText($color-gray-2, $fs-0, $fw-normal);
+                                    &:hover{
+                                        color:#fff;
+                                    }
+                                }
+                            }
+                        }
+                    }            
+                }
+                .secondary{
+                    width:60%;
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0 auto;
+                    .finance,.owner,.experience{
+                        height:auto;
+                        width: auto;
+                        padding-left: 0;
+                        .list-heading{
+                            padding: 25px 0 18px;
+                            @include styleText($color-white-0, $fs-2, $fw-normal);
+                            .text{
+                                display:inline-block;
+                                vertical-align: middle;
+                            }
+                        }
+                        .navbar-nav{                            
+                            padding-top: 0;
+                            li{                                
+                                padding: $pd-0 $pd-4 +5 $pd-0 0;
+                                a{                                    
+                                    @include styleText($color-gray-2, $fs-0, $fw-normal);
+                                    &:hover{
+                                        color:#fff;
+                                    }
+                                }
+                            }
+                        }
+                    }            
+                }         
+            }            
+        }
+    }
+}
+@include responsive("large"){
+    .center{
+        .menu{
+            .secondary{
+                .navbar-nav{
+                    display:none;
+                }
+            }
+        }
+    }
+}
+@include responsive("medium"){
+    .search{
+        .navbar-form{
+            display:none;
+        }
+    }
+    
+}

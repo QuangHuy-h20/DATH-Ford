@@ -362,51 +362,47 @@
       </div>
     </div>
     <div class="gallery-view mobile">
-      <p class="gallery-toggle" id="toggle">       
+      <p class="gallery-toggle" id="toggle">
         <span class="view-all">View All</span>
         <span class="view-less">View Less</span>
-        <i id="icon" class="icon fa fa-plus-circle"></i>
-</p>
+        <i id="icon" class="icon fa fa-plus-circle pl-2"></i>
+      </p>
 
     </div>
   </div>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <!-- Thêm mới(thắng) -->
 
   <!-- AIRBAG -->
-  <div class="airbag">
-    <div class="aigbag_content container-fluid">
-      <div class="airbag_center">
+  <div class="airBag">
+    <div class="airBar-content">
+      <div class="airBag-header">
         <h1>Airbag Recalls</h1>
-
-        <a href="#">
-          <div class="btn-learn-more  ford-btnRed">
-            <span>Learn More</span>
-          </div>
-        </a>
+        <p class="btn-wrapper">
+          <a href="#" class="btn btn-custom ford-btnRed">
+            <span class="btn-learn-more">Learn More</span>
+          </a>
+        </p>
+        <div class="pt-2 mb-4"></div>
+        <div class="p-5"></div>
       </div>
-
     </div>
   </div>
 
   <!--DISCLOSURES -->
   <div class="disclosures">
-    <div class="disclosures_content_top container-fluid">
-
-      <button class=" btn-collapse " data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-        aria-controls="collapseExample">
-
-        <span class="btn-content-wrap">
-          <span class="title">DISCLOSURES</span>
-          <i class="fa fa-chevron-down"></i>
-        </span>
-
-
-      </button>
-      <div class="collapse" id="collapseExample">
-        <div class="card card-body">
-          <ul class="disclosures-text">
+    <div class="disclosures-content">
+      <h2 class="title">
+        <button class=" btn-collapse " data-toggle="collapse" href="#collapseExample" role="button">
+          <span class="btn-content-wrap">
+            <span class="pr-3">DISCLOSURES</span>
+            <i class="fa fa-chevron-down"></i>
+          </span>
+        </button>
+      </h2>
+      <div class="collapse " id="collapseExample">
+        <div class="card card-body p-0">
+          <ul class="disclosures-text container-pad">
             <li>Note.
               <p>Information is provided on an "as is" basis and could include technical, typographical or other errors.
                 Ford makes no warranties, representations, or guarantees of any kind, express or implied, including but
@@ -516,282 +512,403 @@
       </div>
 
     </div>
+  </div>
 
-    <div class="disclosures_content_bot container-fluid">
+  <!-- RESIDENTS -->
+  <div class="residents">
+    <div class="residents-wrapper container-pad">
       <h2>California Residents</h2>
-      <p>Exercise your rights under the California Consumer Privacy Act <a href="#">here</a>.
+      <div class="description">
+        <span>Exercise your rights under the California Consumer Privacy Act <a href="#">here</a>.</span>
+      </div>
+      <p class="btn-wrapper">
+        <a href="#" class="btn btn-custom ford-btnBlue full-width">
+          <span class="btn-text">Do Not Sell My Personal Information</span>
+        </a>
       </p>
-      <a href="#">
-        <div class="btn-do-not-sell ford-btnBlue2">
-          <span>Do Not Sell My Presonal Information</span>
-        </div>
-      </a>
-
     </div>
 
   </div>
 
-  <!-- SEARCH -->
-  <div class="search container-fluid">
-    <div class="search_content container-pad">
-
-      <div class="input-group">
-        <span>
-          <i class="fa fa-search"></i>
-        </span>
-        <input type="search" class="form-control" id="search" placeholder="Search">
-
-      </div>
-      <!-- <div class="input-group col-md-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="basic-addon1">
-            <a href="">
-              <i class="fa fa-search"></i>
-            </a>
-            
-          </span>
-        </div>
-        <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
-      </div> -->
-
-      <div class="search_text ">
-        <span>Popular</span>
-        <a href="#">Electric Vehicles</a>
-        <a href="#">Ranger</a>
-        <a href="#">Explorer</a>
-      </div>
-
-    </div>
-
-  </div>
+  <!-- FOOTER -->
   <footer>
-    <!--  -->
-    <div class="footer_center container-fluid">
+    <div class="search">
+      <nav class="search-content container-pad">
+        <form class="navbar-form" role="search" action="#">
+          <div class="input-group">
+            <span>
+              <i class="fa fa-search"></i>
+            </span>
+            <input type="search" class="form-control" id="search" placeholder="Search">
+          </div>
+        </form>
+        <div class="search-text ">
+          <span>Popular</span>
+          <ul class="list-inline">
+            <li><a href="#">Electric Vehicles</a></li>
+            <li><a href="#">Ranger</a></li>
+            <li><a href="#">Explorer</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="center">
+        <nav class="navbar navbar-center" role="navigation">
+          <div class="menu container-pad">
+            <ul class="nav primary">
+              <li class="vehicles">
+                <div class="list-heading">
+                  <span class="text">All Vehicles</span>  
+                </div>                
+                <ul class="nav navbar-nav">
+                  <li>
+                    <a href="#">
+                      <span class="text">SUVs & Crossovers
+                      </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Trucks & Vans
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Cars
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Electrified
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Commercial Vehicles
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Future Vehicles
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Ford Used Vehicles
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Fleet Vehicles
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      All Vehicles
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Performance Vehicles
+                    </span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="shop">
+                <div class="list-heading">
+                  <span class="text">Shopping Tools</span>  
+                </div>
+                <ul class="nav navbar-nav">
+                  <li>
+                    <a href="#"><span class="text">
+                      Build & Price
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Search Inventory
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Get a Quote
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Pricing & Incentives
+                    </span></a>
+                  </li>
+      
+                  <li>
+                    <a href="#"><span class="text">
+                      Trade-In Value
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Get a Brochure
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Compare Vehicles
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Get Updates
+                    </span></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav secondary">
+              <li class="finance">
+                <div class="list-heading">
+                  <span class="text">Finance</span>  
+                </div>                
+                <ul class="nav navbar-nav">
+                  <li>
+                    <a href="#"><span class="text">
+                      Why Ford Credit
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Finance Options
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Payment Calculator
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Credit Education
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Customer Support
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Ford Promise
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Apply Online
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Ford Credit Account
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Ford Insure
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Ford Interest Advantage
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Ford Interest Advantage
+                    </span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="owner">
+                <div class="list-heading">
+                  <span class="text">Owner</span>  
+                </div>                
+                <ul class="nav navbar-nav">
+                  <li>
+                    <a href="#"><span class="text">
+                      Owner Home
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Schedule Service
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Your Warranty
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Service Coupons & Offers
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Redeem & Rebate
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      SYNC & Technology
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      SYNC Software Updates
+                    </span></a>
+                  </li>
+      
+                  <li>
+                    <a href="#"><span class="text">
+                      Owner Manuals
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Locate a Dealer
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Ford Parts
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Contact Us
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Roadside Assistance
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Ford Protect
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Safety Recalls
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Airbag Recalls
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Ask Ford
+                    </span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="experience">
+                <div class="list-heading">
+                  <span class="text">Experience Ford</span>  
+                </div>                
+                <ul class="nav navbar-nav">
+                  <li>
+                    <a href="#"><span class="text">
+                      Corporate
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Corporate
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Investors
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Company News
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      About Ford
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Racing
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Accessories Store
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Warriors in Pink
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Ford Merchandise
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Ford Motor Company Fund
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      SYNC
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      FordPass
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Ford Co-Pilot360 Technology
+                    </span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="text">
+                      Ford Telematics
+                    </span></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+    <div class="info">
+
+    </div>
+    <div class="social">
+
+    </div>
+  </footer>
+  
+
+
+  <!-- <footer>
+    <div class="footer_center">
       <div class="footer_center_content container-pad">
 
 
-        <div class="item all_ehicles col- ">
-          <span> All Vehicles</span>
-          <ul class="list">
-            <li>
-              <a href="#">SUVs & Crossovers</a>
-            </li>
-            <li>
-              <a href="#">Trucks & Vans</a>
-            </li>
-            <li>
-              <a href="#">Cars</a>
-            </li>
-            <li>
-              <a href="#">Electrified</a>
-            </li>
-            <li>
-              <a href="#">Commercial Vehicles</a>
-            </li>
-            <li>
-              <a href="#">Future Vehicles</a>
-            </li>
-            <li>
-              <a href="#">Ford Used Vehicles</a>
-            </li>
-            <li>
-              <a href="#"> Fleet Vehicles</a>
-            </li>
-            <li>
-              <a href="#">All Vehicles</a>
-            </li>
-            <li>
-              <a href="#">Performance Vehicles</a>
-            </li>
-
-
-          </ul>
-        </div>
-
-        <div class="item shopping_tools">
-          <span> Shopping Tools</span>
-          <ul class="list">
-            <li>
-              <a href="#">Build & Price</a>
-            </li>
-            <li>
-              <a href="#">Search Inventory</a>
-            </li>
-            <li>
-              <a href="#">Get a Quote</a>
-            </li>
-            <li>
-              <a href="#">Pricing & Incentives</a>
-            </li>
-
-            <li>
-              <a href="#">Trade-In Value</a>
-            </li>
-            <li>
-              <a href="#">Get a Brochure</a>
-            </li>
-            <li>
-              <a href="#">Compare Vehicles</a>
-            </li>
-            <li>
-              <a href="#">Get Updates</a>
-            </li>
-
-          </ul>
-        </div>
-
-        <div class="item finance">
-          <span>Finances</span>
-          <ul class="list">
-            <li>
-              <a href="#">Why Ford Credit</a>
-            </li>
-            <li>
-              <a href="#">Finance Options</a>
-            </li>
-            <li>
-              <a href="#">Payment Calculator</a>
-            </li>
-            <li>
-              <a href="#">Credit Education</a>
-            </li>
-            <li>
-              <a href="#">Customer Support</a>
-            </li>
-            <li>
-              <a href="#">Ford Promise</a>
-            </li>
-            <li>
-              <a href="#">Apply Online</a>
-            </li>
-            <li>
-              <a href="#">Ford Credit Account</a>
-            </li>
-            <li>
-              <a href="#">Ford Insure</a>
-            </li>
-            <li>
-              <a href="#">Ford Interest Advantage</a>
-            </li>
-            <li>
-              <a href="#">Investor Center</a>
-            </li>
-
-
-          </ul>
-        </div>
-
-        <div class=" item owner">
-          <span>Owner</span>
-          <ul class="list">
-
-            <li>
-              <a href="#">Owner Home</a>
-            </li>
-            <li>
-              <a href="#">Schedule Service</a>
-            </li>
-            <li>
-              <a href="#">Your Warrantyr</a>
-            </li>
-            <li>
-              <a href="#">Service Coupons & Offers</a>
-            </li>
-            <li>
-              <a href="#">Redeem & Rebate</a>
-            </li>
-            <li>
-              <a href="#">SYNC & Technology</a>
-            </li>
-            <li>
-              <a href="#">SYNC Software Updates</a>
-            </li>
-
-            <li>
-              <a href="#">Owner Manuals</a>
-            </li>
-            <li>
-              <a href="#">Locate a Dealer</a>
-            </li>
-            <li>
-              <a href="#">Ford Partsr</a>
-            </li>
-            <li>
-              <a href="#">Contact Usr</a>
-            </li>
-            <li>
-              <a href="#">Roadside Assistance</a>
-            </li>
-            <li>
-              <a href="#">Ford Protect</a>
-            </li>
-            <li>
-              <a href="#">Safety Recalls</a>
-            </li>
-            <li>
-              <a href="#">Airbag Recalls</a>
-            </li>
-            <li>
-              <a href="#">Ask Ford</a>
-            </li>
-
-
-          </ul>
-        </div>
-
-        <div class="item experience">
-          <span>Experience Ford</span>
-
-          <ul class="list">
-            <li>
-              <a href="#">Corporate</a>
-            </li>
-            <li>
-              <a href="#">Careers</a>
-            </li>
-            <li>
-              <a href="#">Investors</a>
-            </li>
-            <li>
-              <a href="#">Company News</a>
-            </li>
-            <li>
-              <a href="#">About Ford</a>
-            </li>
-            <li>
-              <a href="#">Racing</a>
-            </li>
-            <li>
-              <a href="#">Accessories Store</a>
-            </li>
-            <li>
-              <a href="#">Warriors in Pink</a>
-            </li>
-            <li>
-              <a href="#">Ford Merchandise</a>
-            </li>
-            <li>
-              <a href="#">Ford Motor Company Fund</a>
-            </li>
-            <li>
-              <a href="#">SYNC</a>
-            </li>
-            <li>
-              <a href="#">FordPass</a>
-            </li>
-            <li>
-              <a href="#">Ford Co-Pilot360 Technology</a>
-            </li>
-            <li>
-              <a href="#">Ford Telematics</a>
-            </li>
-
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!--  -->
     <div class="footer_get container-fluid">
       <div class="footer_get_content container-pad">
         <div class="left d-flex">
@@ -832,35 +949,38 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
   <!-- Library support jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
   <!-- VIEW BUTTON -->
   <script>
-  
-  (function(document){
-  var toggle = document.getElementById('toggle');  
-  var icon = document.getElementById('icon');
-  var open = false;
+    (function (document) {
+      var toggle = document.getElementById('toggle');
+      var icon = document.getElementById('icon');
+      var open = false;
 
-  toggle.addEventListener('click', function(){
-    
-    if(open){
-      $('.view-all').css({"display":"inline"});
-      icon.className = 'fa fa-plus-circle pl-2';
-       $('.view-less').css({"display":"none"});
-       $('.hidden').css({"display":"none"});
-    } else{
-      $('.view-less').css({"display":"inline"});
-      $('.view-all').css({"display":"none"});
-      icon.className = 'fa fa-minus-circle pl-2';
-      $('.hidden').css({"display":"block"});
-    }
-    open = !open;
-  });
-})(document); 
+      toggle.addEventListener('click', function () {
+
+        if (open) {
+          $('.view-all').css({
+            "display": "inline"
+          });
+          icon.className = 'fa fa-plus-circle pl-2';
+          $('.view-less, .hidden').hide();
+
+        } else {
+          $('.view-less').css({
+            "display": "inline"
+          });
+          icon.className = 'fa fa-minus-circle pl-2';
+          $('.view-all').hide();
+          $('.hidden').show();
+        }
+        open = !open;
+      });
+    })(document);
   </script>
 
   <!-- VENO JS -->
