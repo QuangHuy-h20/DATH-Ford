@@ -1,0 +1,118 @@
+.social {
+    .social_content {
+        padding-bottom: 50px;
+
+        background-color: $color-gray-6;
+
+        .top {
+            padding-top: 30px;
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            .language {
+                a {
+                    @include styleText($color-blue-0, 13px, $fw-normal);
+                    padding: 10px 0;
+
+                    i {
+                        color: #2096cd;
+                        margin-right: 11px;
+                        font-size: $fs-3;
+                    }
+                    span {
+                        text-decoration: underline;
+                    }
+                    &:hover {
+                        color: $color-blue-1;
+                    }
+                    &:hover i {
+                        color: $color-blue-1;
+                    }
+                }
+            }
+
+            .navbar-brand {
+                a {
+                    .navbar-logo {
+                        background: transparent url(../img/logo.webp) no-repeat -150px 0;
+                        width: 73px;
+                        height: 26px;
+                        background-size: 300px 150px;
+                        display: inline-block;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .bot {
+        a {
+            @include styleText($color-gray-3, 1.3rem, $fw-normal);
+            &:hover {
+                color: $color-blue-1;
+            }
+        }
+        .navbar {
+            .navbar-bot {
+                padding-top: 5px;
+                width: 100%;
+                display: flex;
+                // justify-content: space-between;
+                // 
+                flex-wrap: wrap;
+                li {
+                    padding-right: 31px;
+                    line-height: 3rem;
+                }
+            }
+        }
+    }
+}
+
+//responsive
+
+@include responsive("large") {
+    .bot {
+        .navbar {
+            .navbar-bot {
+                max-width: 500px;
+            }
+        }
+    }
+}
+
+
+@include responsive("medium") {
+    .social {
+        .social_content {
+            .top {
+                .navbar-brand {
+                    display: none;
+                }
+            }
+
+            .bot {
+                .navbar-bot {
+                    display: inline;
+                }
+            }
+            .navbar-brand {
+                a {
+                    .navbar-logo {
+                        background: transparent url(../img/logo.webp) no-repeat -150px 0;
+                        width: 73px;
+                        height: 26px;
+                        background-size: 300px 150px;
+                        display: inline-block;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive("small") {
+ 
+}

@@ -1,0 +1,144 @@
+.info {
+  background-color: $color-blue-1;
+
+  padding: 40px 0;
+  .info_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left {
+      padding-top: 2px;
+      padding-bottom: 14px;
+      .item {
+        a {
+          padding-right: 50px;
+          padding-top: 14px;
+          padding-bottom: 20px;
+          border: transparent 1px solid;
+          // &:focus {
+          //     border: 1px solid $color-white-0;
+          // }
+
+          i {
+            margin-right: 10px;
+            padding: 8px 8px;
+            font-size: 18px;
+            background-color: #2096cd;
+            color: whitesmoke;
+
+            border-radius: 50%;
+          }
+          span {
+            @include styleText($color-blue-9, 18px, $fw-normal);
+          }
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+
+      padding: 10px 0;
+      .text {
+        margin-right: 25px;
+        @include styleText($color-white-0, 14px, $fw-normal);
+      }
+      .icons {
+        a {
+          margin-right: 5px;
+          border: 1px solid transparent;
+          padding: 10px 10px;
+          i {
+            text-align: center;
+            @include styleText($color-white-0, 14px, $fw-normal);
+          }
+          &:focus {
+            border: 1px solid $color-white-0;
+          }
+        }
+        .icon_facebook {
+          background-color: #3c5b99;
+        }
+        .icon_twitter {
+          background-color: #1da2f3;
+        }
+        .icon_youtube {
+          background-color: #ff0100;
+        }
+        .icon_instagram {
+          background-color: #dc2c75;
+        }
+      }
+    }
+  }
+}
+
+@include responsive("extra-large"){
+    .info_content{
+       .right {
+        position: relative;
+  
+        .text {
+          position: absolute;
+          top: -35px;
+          p {
+            font-size: 1.2rem !important;
+            margin-bottom: 15px !important;
+          }
+        }
+      } 
+    }
+}
+
+@include responsive("large") {
+  .info_content {
+    padding-top: 20px;
+    .left {
+      .item2 {
+        display: none;
+      }
+    }
+
+    .right {
+      position: relative;
+
+      .text {
+        position: absolute;
+        top: -35px;
+        p {
+          font-size: 1.2rem !important;
+          margin-bottom: 15px !important;
+        }
+      }
+    }
+  }
+}
+
+@include responsive("medium") {
+  .info {
+    padding: 0;
+    .info_content {
+      display: inline;
+
+      .left {
+        margin-right: 0;
+        padding: 20px !important;
+        .item1 {
+          width: 100%;
+          border-bottom: 1px solid #788691;
+          padding-bottom: 15px;
+        }
+      }
+
+      .right {
+        margin-top: 40px;
+        padding: 20px;
+      }
+    }
+  }
+}
+
+// @include responsive ("small"){
+
+// }
