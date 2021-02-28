@@ -1042,6 +1042,7 @@ footer .center .navbar-center .menu .primary .shop .navbar-nav li a:hover {
 footer .center .navbar-center .menu .secondary {
   width: 60%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
 }
@@ -1096,93 +1097,112 @@ footer .center .navbar-center .menu .secondary .experience .navbar-nav li a:hove
   color: #fff;
 }
 
-footer .follow {
-  background-color: #102b4e;
-  border: 0 none;
-  padding: 5px 0;
+footer .hidden-list {
+  width: 50%;
+  display: none;
+  padding: 15px 0;
 }
 
-footer .follow .follow-content {
-  display: flex;
-  justify-content: space-between;
+footer .hidden-list .hidden-item {
+  padding: 10px 0;
 }
 
-footer .follow .follow-content .left {
-  display: flex;
-  justify-content: space-between;
-  max-width: 65%;
-  padding-top: 3rem;
-}
-
-footer .follow .follow-content .left li {
-  padding-top: 0;
-  margin-right: 20px;
+footer .hidden-list .hidden-item p {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #3a3a3a;
   position: relative;
-  z-index: 100;
-}
-
-footer .follow .follow-content .left li .circle {
-  display: inline-block;
-  margin-right: 15px;
-  width: 3.6rem;
-  height: 3.6rem;
-  border-radius: 50%;
-  background: #2096cd;
-}
-
-footer .follow .follow-content .left li .text {
-  color: #37a9e8;
-  font-size: 18px;
-  font-weight: 400;
-}
-
-footer .follow .follow-content .right {
-  display: flex;
-  justify-content: space-between;
-  max-width: 35%;
-  padding: 3rem 0 4rem;
-}
-
-footer .follow .follow-content .right .contact .icon {
-  margin-right: 5px;
-  border: 1px solid transparent;
-  padding: 10px 10px;
-}
-
-footer .follow .follow-content .right .contact .icon i {
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
 }
 
-footer .follow .follow-content .right .contact .facebook {
-  background-color: #3c5b99;
+footer .hidden-list .hidden-item p a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
 }
 
-footer .follow .follow-content .right .contact .twitter {
-  background-color: #1da2f3;
+footer .hidden-list .hidden-item p i {
+  position: absolute;
+  right: 5px;
+  bottom: 13px;
 }
 
-footer .follow .follow-content .right .contact .youtube {
-  background-color: #ff0100;
+footer .list2 {
+  width: 100%;
+  display: none;
+  padding: 15px 0;
 }
 
-footer .follow .follow-content .right .contact .instagram {
-  background-color: #dc2c75;
+footer .list2 .hidden-item {
+  padding: 10px 0;
+}
+
+footer .list2 .hidden-item p {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #3a3a3a;
+  position: relative;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+footer .list2 .hidden-item p a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+footer .list2 .hidden-item p i {
+  position: absolute;
+  right: 5px;
+  bottom: 13px;
 }
 
 @media screen and (max-width: 992px) {
-  .center .menu .primary {
-    width: 50% !important;
+  footer .center .menu .primary {
+    width: 60% !important;
   }
-  .center .menu .secondary {
+  footer .center .menu .secondary {
+    display: none !important;
+  }
+  footer .center .menu .list1 {
+    display: block !important;
+  }
+  footer .center .menu .list2 {
     display: none !important;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .search .navbar-form {
-    display: none;
+  footer .center .menu {
+    display: inline !important;
+    width: 100%;
+  }
+  footer .center .menu .primary {
+    width: 100% !important;
+    padding: 0 0;
+    margin: 0 0;
+  }
+  footer .center .menu .primary .shop {
+    display: none !important;
+  }
+  footer .center .menu .primary .vehicles {
+    width: 100% !important;
+  }
+  footer .center .menu .primary .vehicles .heading_vehicles {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #3a3a3a;
+    margin-bottom: 10px;
+  }
+  footer .center .menu .secondary {
+    display: none !important;
+  }
+  footer .center .menu .list1 {
+    display: none !important;
+  }
+  footer .center .menu .list2 {
+    display: block !important;
   }
 }
 
@@ -1226,6 +1246,236 @@ footer .follow .follow-content .right .contact .instagram {
   }
   .description span {
     font-size: 14px !important;
+  }
+}
+
+.info {
+  background-color: #102b4e;
+  padding: 40px 0;
+}
+
+.info .info_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info .info_content .left {
+  padding-top: 2px;
+  padding-bottom: 14px;
+}
+
+.info .info_content .left .item a {
+  padding-right: 50px;
+  padding-top: 14px;
+  padding-bottom: 20px;
+  border: transparent 1px solid;
+}
+
+.info .info_content .left .item a i {
+  margin-right: 10px;
+  padding: 8px 8px;
+  font-size: 18px;
+  background-color: #2096cd;
+  color: whitesmoke;
+  border-radius: 50%;
+}
+
+.info .info_content .left .item a span {
+  color: #37a9e8;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.info .info_content .right {
+  display: flex;
+  padding: 10px 0;
+}
+
+.info .info_content .right .text {
+  margin-right: 25px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.info .info_content .right .icons a {
+  margin-right: 5px;
+  border: 1px solid transparent;
+  padding: 10px 10px;
+}
+
+.info .info_content .right .icons a i {
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.info .info_content .right .icons a:focus {
+  border: 1px solid #fff;
+}
+
+.info .info_content .right .icons .icon_facebook {
+  background-color: #3c5b99;
+}
+
+.info .info_content .right .icons .icon_twitter {
+  background-color: #1da2f3;
+}
+
+.info .info_content .right .icons .icon_youtube {
+  background-color: #ff0100;
+}
+
+.info .info_content .right .icons .icon_instagram {
+  background-color: #dc2c75;
+}
+
+@media screen and (max-width: 1200px) {
+  .info_content .right {
+    position: relative;
+  }
+  .info_content .right .text {
+    position: absolute;
+    top: -35px;
+  }
+  .info_content .right .text p {
+    font-size: 1.2rem !important;
+    margin-bottom: 15px !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .info_content {
+    padding-top: 20px;
+  }
+  .info_content .left .item2 {
+    display: none;
+  }
+  .info_content .right {
+    position: relative;
+  }
+  .info_content .right .text {
+    position: absolute;
+    top: -35px;
+  }
+  .info_content .right .text p {
+    font-size: 1.2rem !important;
+    margin-bottom: 15px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info {
+    padding: 0;
+  }
+  .info .info_content {
+    display: inline;
+  }
+  .info .info_content .left {
+    margin-right: 0;
+    padding: 20px !important;
+  }
+  .info .info_content .left .item1 {
+    width: 100%;
+    border-bottom: 1px solid #788691;
+    padding-bottom: 15px;
+  }
+  .info .info_content .right {
+    margin-top: 40px;
+    padding: 20px;
+  }
+}
+
+.social .social_content {
+  padding-bottom: 50px;
+  background-color: #f7f7f7;
+}
+
+.social .social_content .top {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social .social_content .top .language a {
+  color: #0276b3;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+.social .social_content .top .language a i {
+  color: #2096cd;
+  margin-right: 11px;
+  font-size: 20px;
+}
+
+.social .social_content .top .language a span {
+  text-decoration: underline;
+}
+
+.social .social_content .top .language a:hover {
+  color: #102b4e;
+}
+
+.social .social_content .top .language a:hover i {
+  color: #102b4e;
+}
+
+.social .social_content .top .navbar-brand a .navbar-logo {
+  background: transparent url(../img/logo.webp) no-repeat -150px 0;
+  width: 73px;
+  height: 26px;
+  background-size: 300px 150px;
+  display: inline-block;
+  padding: 0;
+}
+
+.social .bot a {
+  color: #555;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.social .bot a:hover {
+  color: #102b4e;
+}
+
+.social .bot .navbar .navbar-bot {
+  padding-top: 5px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social .bot .navbar .navbar-bot li {
+  padding-right: 31px;
+  line-height: 3rem;
+}
+
+@media screen and (max-width: 992px) {
+  .bot .navbar .navbar-bot {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .social .social_content .top .navbar-brand {
+    display: none;
+  }
+  .social .social_content .bot .navbar-bot {
+    display: inline;
+  }
+  .social .social_content .navbar-brand a .navbar-logo {
+    background: transparent url(../img/logo.webp) no-repeat -150px 0;
+    width: 73px;
+    height: 26px;
+    background-size: 300px 150px;
+    display: inline-block;
+    padding: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
