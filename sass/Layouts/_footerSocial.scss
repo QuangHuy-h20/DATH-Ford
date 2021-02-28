@@ -12,8 +12,8 @@
             .language {
                 a {
                     @include styleText($color-blue-0, 13px, $fw-normal);
-                    padding: 10px 10px;
-                    border: 1px solid red;
+                    padding: 10px 0;
+
                     i {
                         color: #2096cd;
                         margin-right: 11px;
@@ -32,9 +32,9 @@
             }
 
             .navbar-brand {
-                .navbar-brand {
-                    .navbar-brand {
-                        background: transparent url(../../img/logo.webp) no-repeat -150px 0;
+                a {
+                    .navbar-logo {
+                        background: transparent url(../img/logo.webp) no-repeat -150px 0;
                         width: 73px;
                         height: 26px;
                         background-size: 300px 150px;
@@ -48,7 +48,7 @@
 
     .bot {
         a {
-            @include styleText($color-gray-3, 13px, $fw-normal);
+            @include styleText($color-gray-3, 1.3rem, $fw-normal);
             &:hover {
                 color: $color-blue-1;
             }
@@ -58,8 +58,61 @@
                 padding-top: 5px;
                 width: 100%;
                 display: flex;
-                justify-content: space-between;
+                // justify-content: space-between;
+                // 
+                flex-wrap: wrap;
+                li {
+                    padding-right: 31px;
+                    line-height: 3rem;
+                }
             }
         }
     }
+}
+
+//responsive
+
+@include responsive("large") {
+    .bot {
+        .navbar {
+            .navbar-bot {
+                max-width: 500px;
+            }
+        }
+    }
+}
+
+
+@include responsive("medium") {
+    .social {
+        .social_content {
+            .top {
+                .navbar-brand {
+                    display: none;
+                }
+            }
+
+            .bot {
+                .navbar-bot {
+                    display: inline;
+                }
+            }
+            .navbar-brand {
+                a {
+                    .navbar-logo {
+                        background: transparent url(../img/logo.webp) no-repeat -150px 0;
+                        width: 73px;
+                        height: 26px;
+                        background-size: 300px 150px;
+                        display: inline-block;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive("small") {
+ 
 }
