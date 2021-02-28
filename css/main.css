@@ -996,39 +996,46 @@ footer .center .navbar-center .menu .primary {
   margin: 0 auto;
 }
 
-footer .center .navbar-center .menu .primary .vehicles, footer .center .navbar-center .menu .primary .shop {
+footer .center .navbar-center .menu .primary .vehicles,
+footer .center .navbar-center .menu .primary .shop {
   height: auto;
   width: 50%;
   padding-left: 0;
 }
 
-footer .center .navbar-center .menu .primary .vehicles .list-heading, footer .center .navbar-center .menu .primary .shop .list-heading {
+footer .center .navbar-center .menu .primary .vehicles .list-heading,
+footer .center .navbar-center .menu .primary .shop .list-heading {
   padding: 25px 0 18px;
   color: #fff;
   font-size: 16px;
   font-weight: 400;
 }
 
-footer .center .navbar-center .menu .primary .vehicles .list-heading .text, footer .center .navbar-center .menu .primary .shop .list-heading .text {
+footer .center .navbar-center .menu .primary .vehicles .list-heading .text,
+footer .center .navbar-center .menu .primary .shop .list-heading .text {
   display: inline-block;
   vertical-align: middle;
 }
 
-footer .center .navbar-center .menu .primary .vehicles .navbar-nav, footer .center .navbar-center .menu .primary .shop .navbar-nav {
+footer .center .navbar-center .menu .primary .vehicles .navbar-nav,
+footer .center .navbar-center .menu .primary .shop .navbar-nav {
   padding-top: 0;
 }
 
-footer .center .navbar-center .menu .primary .vehicles .navbar-nav li, footer .center .navbar-center .menu .primary .shop .navbar-nav li {
+footer .center .navbar-center .menu .primary .vehicles .navbar-nav li,
+footer .center .navbar-center .menu .primary .shop .navbar-nav li {
   padding: 5px 25px 5px 0;
 }
 
-footer .center .navbar-center .menu .primary .vehicles .navbar-nav li a, footer .center .navbar-center .menu .primary .shop .navbar-nav li a {
+footer .center .navbar-center .menu .primary .vehicles .navbar-nav li a,
+footer .center .navbar-center .menu .primary .shop .navbar-nav li a {
   color: #a7a7a7;
   font-size: 14px;
   font-weight: 400;
 }
 
-footer .center .navbar-center .menu .primary .vehicles .navbar-nav li a:hover, footer .center .navbar-center .menu .primary .shop .navbar-nav li a:hover {
+footer .center .navbar-center .menu .primary .vehicles .navbar-nav li a:hover,
+footer .center .navbar-center .menu .primary .shop .navbar-nav li a:hover {
   color: #fff;
 }
 
@@ -1039,45 +1046,137 @@ footer .center .navbar-center .menu .secondary {
   margin: 0 auto;
 }
 
-footer .center .navbar-center .menu .secondary .finance, footer .center .navbar-center .menu .secondary .owner, footer .center .navbar-center .menu .secondary .experience {
+footer .center .navbar-center .menu .secondary .finance,
+footer .center .navbar-center .menu .secondary .owner,
+footer .center .navbar-center .menu .secondary .experience {
   height: auto;
   width: auto;
   padding-left: 0;
 }
 
-footer .center .navbar-center .menu .secondary .finance .list-heading, footer .center .navbar-center .menu .secondary .owner .list-heading, footer .center .navbar-center .menu .secondary .experience .list-heading {
+footer .center .navbar-center .menu .secondary .finance .list-heading,
+footer .center .navbar-center .menu .secondary .owner .list-heading,
+footer .center .navbar-center .menu .secondary .experience .list-heading {
   padding: 25px 0 18px;
   color: #fff;
   font-size: 16px;
   font-weight: 400;
 }
 
-footer .center .navbar-center .menu .secondary .finance .list-heading .text, footer .center .navbar-center .menu .secondary .owner .list-heading .text, footer .center .navbar-center .menu .secondary .experience .list-heading .text {
+footer .center .navbar-center .menu .secondary .finance .list-heading .text,
+footer .center .navbar-center .menu .secondary .owner .list-heading .text,
+footer .center .navbar-center .menu .secondary .experience .list-heading .text {
   display: inline-block;
   vertical-align: middle;
 }
 
-footer .center .navbar-center .menu .secondary .finance .navbar-nav, footer .center .navbar-center .menu .secondary .owner .navbar-nav, footer .center .navbar-center .menu .secondary .experience .navbar-nav {
+footer .center .navbar-center .menu .secondary .finance .navbar-nav,
+footer .center .navbar-center .menu .secondary .owner .navbar-nav,
+footer .center .navbar-center .menu .secondary .experience .navbar-nav {
   padding-top: 0;
 }
 
-footer .center .navbar-center .menu .secondary .finance .navbar-nav li, footer .center .navbar-center .menu .secondary .owner .navbar-nav li, footer .center .navbar-center .menu .secondary .experience .navbar-nav li {
+footer .center .navbar-center .menu .secondary .finance .navbar-nav li,
+footer .center .navbar-center .menu .secondary .owner .navbar-nav li,
+footer .center .navbar-center .menu .secondary .experience .navbar-nav li {
   padding: 5px 25px 5px 0;
 }
 
-footer .center .navbar-center .menu .secondary .finance .navbar-nav li a, footer .center .navbar-center .menu .secondary .owner .navbar-nav li a, footer .center .navbar-center .menu .secondary .experience .navbar-nav li a {
+footer .center .navbar-center .menu .secondary .finance .navbar-nav li a,
+footer .center .navbar-center .menu .secondary .owner .navbar-nav li a,
+footer .center .navbar-center .menu .secondary .experience .navbar-nav li a {
   color: #a7a7a7;
   font-size: 14px;
   font-weight: 400;
 }
 
-footer .center .navbar-center .menu .secondary .finance .navbar-nav li a:hover, footer .center .navbar-center .menu .secondary .owner .navbar-nav li a:hover, footer .center .navbar-center .menu .secondary .experience .navbar-nav li a:hover {
+footer .center .navbar-center .menu .secondary .finance .navbar-nav li a:hover,
+footer .center .navbar-center .menu .secondary .owner .navbar-nav li a:hover,
+footer .center .navbar-center .menu .secondary .experience .navbar-nav li a:hover {
   color: #fff;
 }
 
+footer .follow {
+  background-color: #102b4e;
+  border: 0 none;
+  padding: 5px 0;
+}
+
+footer .follow .follow-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .follow .follow-content .left {
+  display: flex;
+  justify-content: space-between;
+  max-width: 65%;
+  padding-top: 3rem;
+}
+
+footer .follow .follow-content .left li {
+  padding-top: 0;
+  margin-right: 20px;
+  position: relative;
+  z-index: 100;
+}
+
+footer .follow .follow-content .left li .circle {
+  display: inline-block;
+  margin-right: 15px;
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 50%;
+  background: #2096cd;
+}
+
+footer .follow .follow-content .left li .text {
+  color: #37a9e8;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+footer .follow .follow-content .right {
+  display: flex;
+  justify-content: space-between;
+  max-width: 35%;
+  padding: 3rem 0 4rem;
+}
+
+footer .follow .follow-content .right .contact .icon {
+  margin-right: 5px;
+  border: 1px solid transparent;
+  padding: 10px 10px;
+}
+
+footer .follow .follow-content .right .contact .icon i {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+footer .follow .follow-content .right .contact .facebook {
+  background-color: #3c5b99;
+}
+
+footer .follow .follow-content .right .contact .twitter {
+  background-color: #1da2f3;
+}
+
+footer .follow .follow-content .right .contact .youtube {
+  background-color: #ff0100;
+}
+
+footer .follow .follow-content .right .contact .instagram {
+  background-color: #dc2c75;
+}
+
 @media screen and (max-width: 992px) {
-  .center .menu .secondary .navbar-nav {
-    display: none;
+  .center .menu .primary {
+    width: 50% !important;
+  }
+  .center .menu .secondary {
+    display: none !important;
   }
 }
 
@@ -1128,47 +1227,5 @@ footer .center .navbar-center .menu .secondary .finance .navbar-nav li a:hover, 
   .description span {
     font-size: 14px !important;
   }
-}
-
-.footer_center {
-  background-color: #242424;
-  padding: 50px 0;
-}
-
-.footer_center .footer_center_content {
-  display: flex;
-  justify-content: space-between;
-  padding-right: 100px;
-}
-
-.footer_center .footer_center_content .item {
-  padding-right: 50px;
-}
-
-.footer_center .footer_center_content .item span {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.footer_center .footer_center_content .item .list {
-  padding-top: 25px;
-}
-
-.footer_center .footer_center_content .item .list li {
-  line-height: 1.5rem;
-  padding-right: 100px;
-  padding: 3px 0;
-}
-
-.footer_center .footer_center_content .item .list li a {
-  padding: 3px 0;
-  color: #a7a7a7;
-  font-size: 15px;
-  font-weight: 400;
-}
-
-.footer_center .footer_center_content .item .list li a:hover {
-  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
