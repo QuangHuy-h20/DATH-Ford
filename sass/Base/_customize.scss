@@ -205,3 +205,30 @@
         padding-right: 15px;
     }
 }
+
+
+// backToTop 
+.backToTop{
+    opacity: 0;
+    i{
+        color: #fff;
+        background-color: rgba(0,0,0,0.6);
+        border:  none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        border-radius: 50%;
+        font-size: 15px;
+        text-align: center;
+
+        position: fixed;
+        right: 20px;
+        bottom: 40px;
+    
+    } 
+    
+}
+.cd-top--is-visible {
+    
+    opacity: 1;
+} 
