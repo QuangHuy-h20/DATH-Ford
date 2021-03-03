@@ -98,7 +98,7 @@ footer {
                 .secondary {
                     width: 60%;
                     display: flex;
-                    flex-wrap: wrap;
+                    flex-wrap: nowrap;
                     justify-content: space-between;
                     margin: 0 auto;
                     .finance,
@@ -185,7 +185,11 @@ footer {
 
 // SEARCH
 @include responsive("medium") {
-    
+    .search{
+        .navbar-form{
+            display: none !important;
+        }
+    }
 }
 
 // CENTER

@@ -1065,7 +1065,7 @@ footer .center .navbar-center .menu .primary .shop .navbar-nav li a:hover {
 footer .center .navbar-center .menu .secondary {
   width: 60%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   margin: 0 auto;
 }
@@ -1180,6 +1180,12 @@ footer .list2 .hidden-item p i {
   position: absolute;
   right: 5px;
   bottom: 13px;
+}
+
+@media screen and (max-width: 768px) {
+  footer .search .navbar-form {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 992px) {
