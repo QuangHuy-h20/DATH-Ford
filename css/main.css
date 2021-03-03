@@ -323,12 +323,12 @@ header .ford-container .ford-navbar-top .header__top .header__right .icon {
 
 header .ford-container .ford-navbar-top .header__top .header__left .ford-mustang,
 header .ford-container .ford-navbar-top .header__top .header__right .ford-mustang {
-  background-image: url(../../img/mustang-logo.svg);
+  background-image: url(../img/mustang-logo.svg);
 }
 
 header .ford-container .ford-navbar-top .header__top .header__left .ford-bronco,
 header .ford-container .ford-navbar-top .header__top .header__right .ford-bronco {
-  background-image: url(../../img/logo.svg);
+  background-image: url(../img/logo.svg);
 }
 
 header .ford-container .ford-navbar-top .header__top .header__left .text,
@@ -343,7 +343,7 @@ header .ford-container .ford-navbar-top .header__top .header__right .text {
 
 header .ford-container .ford-navbar-top .header__top .header__left .icon-location,
 header .ford-container .ford-navbar-top .header__top .header__right .icon-location {
-  background: url(../../img/location.svg);
+  background: url(../img/location.svg);
   background-size: 100% 100%;
   height: 23px;
   width: 23px;
@@ -374,7 +374,7 @@ header .ford-container .ford-navbar-bottom .header__bottom .navbar-logo {
 }
 
 header .ford-container .ford-navbar-bottom .header__bottom .brand-logo {
-  background: transparent url(../../img/logo.webp) no-repeat -200px 0;
+  background: transparent url(../img/logo.webp) no-repeat -200px 0;
   width: 93px;
   height: 35px;
   background-size: 400px 200px;
