@@ -1,0 +1,30 @@
+.airBag{
+    .airBar-content{
+        background-color: $color-gray-6;
+        text-align: center;      
+        padding-top: $pd-4; 
+        .airBag-header{
+            h1{
+                @include styleText($color-red-0, $fs-4, $fw-normal);
+                margin: $mg-5 0 $mg-3;
+            }
+            a{
+                margin-top: 4rem;
+                display: inline-block;
+                .btn-custom{
+                    &:hover{
+                        span{
+                            color: $color-red-0 !important;
+                        }
+                    }
+                } 
+             
+            }
+        }
+    }
+}
+@include responsive("medium"){
+    h1{
+        font-size: $fs-3 + 4 !important;
+    }
+}

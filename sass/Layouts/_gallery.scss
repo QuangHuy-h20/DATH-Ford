@@ -1,0 +1,195 @@
+.gallery {
+    .gallery__container {
+        width: 100%;
+        display: inline-flex;
+        flex-wrap: wrap;
+
+        .gallery__content {
+            h2 {
+                display: inline-block;
+                letter-spacing: 1px;
+                @include styleText($color-gray-0, $fs-3 + 7, $fw-normal);
+            }
+
+            p {
+                margin-top: $mg-5;
+                @include styleText($color-gray-4, $fs-2, $fw-bold);
+            }
+        }
+        .hidden{
+            display: block;
+        }
+
+        .flex-center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .padding-min {
+            padding: 0;
+            margin: 0;
+        }
+
+        .lg-container {
+            width: 75%;
+        }
+
+        .md-container {
+            width: 50%;
+        }
+
+        .sm-container {
+            width: 25%;
+        }
+
+        .flex-order-1 {
+            order: 1;
+            align-self: center;
+            text-align: center;
+        }
+
+        .flex-order-2 {
+            order: 2;
+        }
+
+        .flex-order-3 {
+            order: 3;
+        }
+
+        .flex-order-4 {
+            order: 4;
+            .small-item {
+                width: 50%;
+            }  
+        }
+
+        .flexbox {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .gallery-item {
+            position: relative;
+
+            .img-hover {
+                overflow: hidden;
+
+                img {
+                    transition: all 0.3s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            .blue-bg {
+                background-color: $color-blue-4;
+            }
+
+            .gallery-label {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                min-height: 20px;
+
+                .gallery-label-container {
+                    padding: 4%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .txt {
+                        letter-spacing: 0.5px;
+                        @include styleText($color-white-0, $fs-1, $fw-normal);
+                    }
+
+                    .icon-txt {
+                        @include styleText($color-white-0, $fs-3 +4, $fw-normal);
+                    }
+                }
+
+                .gallery-label-container.label-lg {
+                    padding: 3%;
+
+                    .txt {
+                        font-size: $fs-3 + 1;
+                    }
+
+                    .icon-txt {
+                        font-size: $fs-4 - 8;
+                    }
+                }
+            }
+
+        }
+    }
+    .gallery-view{
+        background-color: $color-blue-0;
+        width: 100%;
+        text-align: center;
+        padding: $pd-3 0;
+        cursor: pointer;    
+        .gallery-toggle{
+            @include styleText($color-white-0, $fs-4, $fw-normal);
+            .view-all{
+                display: inline;
+            }
+            .view-less{
+                display: none;
+            }
+        }
+    }
+    .mobile{
+        display: none;
+    }
+}
+
+@include responsive("medium") {
+    .gallery__container {
+        .gallery__content {
+            h2 {
+                line-height: 2.6rem;
+                padding: $pd-4 + 10 0;
+                margin: 2rem 0 1rem 0;
+                font-size: $fs-4;
+            }
+
+            p {
+                display: none;
+            }
+        }
+        .lg-container,
+        .sm-container,
+        .md-container {
+            width: 100% !important;
+        }
+        .gallery-label-container{
+            .txt{
+                font-size: $fs-3 + 5 !important;
+            }
+            .icon-txt{
+                font-size: $fs-4 !important;
+            }
+        }
+        
+        .small-item {
+            width: 100% !important;
+        }
+
+        #hide-1, #hide-2, #hide-3{
+            display: none;
+        }
+        
+    }
+    .mobile{
+        display: block !important;
+    }    
+    .gallery-view{
+
+        .gallery-toggle{
+            font-size: $fs-3 + 10 !important;
+        }
+    }
+}

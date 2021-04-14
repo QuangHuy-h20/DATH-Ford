@@ -1,0 +1,234 @@
+//CUSTOM CONTAINER
+
+.container-pad {
+    padding-left: 95px;
+    padding-right: 95px;
+}
+
+//PREV, NEXT ICON
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 55px;
+    height: 62px;
+    background-color: $color-gray-4 !important;
+}
+
+.carousel-control-next {
+    left: unset;
+    right: 0;
+}
+
+// CUSTOM BUTTON MENU 
+
+.container-menu {
+    display: block;
+    cursor: pointer;
+
+    p {
+        text-align: center;
+        @include styleText($color-gray-0, $fs-1, $fw-normal);
+    }
+
+    margin-top: $mg-4
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+    text-align: center;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+// NAVBAR
+.navbar {
+    padding: 0;
+}
+
+.nav-item {
+    align-self: center;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 1) !important;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1;
+    vertical-align: middle;
+    margin-right: 0;
+}
+
+.navbar-collapse {
+    text-align: center;
+    background-color: #fff;
+}
+
+.nav-link {
+    padding: 0;
+}
+
+//BUTTON
+.btn {
+    border-radius: 0;
+}
+
+.btn-custom {
+    min-height: 50px;
+    width: 270px;
+    line-height: 1.25;
+    padding: $pd-3 $pd-4;
+    text-align: center;
+    letter-spacing: 1px;
+
+    span {
+        @include styleText($color-white-0, $fs-2, $fw-normal);
+    }
+
+    &:hover {
+        background-color: $color-white-0;
+        border: 1px solid #0276b3;
+        color: $color-blue-1;
+
+        .btn-text {
+            color: $color-blue-1 !important;
+        }
+        .btn-learn-more{
+            color: $color-red-0 !important;
+        }
+
+    }
+}
+
+//IMAGE CUSTOM RESPONSIVE
+
+.image__full {
+    width: 100%;
+    display: block;
+}
+
+.image__medium,
+.image__small {
+    width: 100%;
+    display: none;
+}
+
+@include responsive("extra-large") {
+    .container-pad {
+        padding-left: 95px;
+        padding-right: 95px;
+    }
+}
+
+@include responsive("large") {
+
+    .container-pad {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .img-wrapper {
+        .image__medium {
+            display: block;
+            width: 100%;
+        }
+
+        .image__full,
+        .image__small {
+            display: none;
+        }
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        display: none;
+    }
+}
+
+@include responsive("medium") {
+    .container-pad {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .img-wrapper {
+        .image__small {
+            display: block;
+            width: 100%;
+        }
+
+        .image__full,
+        .image__medium {
+            display: none;
+        }
+    }
+}
+
+@include responsive("small") {
+    .container-pad {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .image__small {
+        display: block;
+        width: 100%;
+    }
+}
+
+@include responsive("extra-small") {
+    .container-pad {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+// backToTop 
+.backToTop{
+    opacity: 0;
+    i{
+        color: #fff;
+        background-color: rgba(0,0,0,0.6);
+        border:  none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        border-radius: 50%;
+        font-size: 15px;
+        text-align: center;
+
+        position: fixed;
+        right: 20px;
+        bottom: 40px;
+    
+    } 
+    
+}
+.cd-top--is-visible {
+    
+    opacity: 1;
+} 

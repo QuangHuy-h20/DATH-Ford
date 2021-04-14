@@ -1,0 +1,49 @@
+.ford-carousel {
+    position: relative;    
+    .content-wrapper {
+        p {
+            position: absolute;
+            top: 26%;
+            left: 1%;
+            margin-top: $mg-4 + 10px;
+            a{
+                margin-top: $mg-3;
+            }
+        }
+    }
+}
+
+//RESPONSIVE
+
+@include responsive("large") {
+    .img-wrapper{
+        .image__medium{
+            display: block;
+            width: 100%;
+        }
+        
+        .image__full, .image__small{
+            display:none;
+        }
+    }
+}
+
+@include responsive("medium") {
+
+    .img-wrapper{
+        .image__small{
+            display: block;
+            width: 100%;
+        }
+        .image__full, .image__medium{
+            display:none;
+        }
+    }
+    .content-wrapper{
+        p{
+            top:50% !important;
+            width: 100% !important;
+        }
+    }
+}
+

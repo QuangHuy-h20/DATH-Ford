@@ -1,0 +1,20 @@
+.ford-btnBlue{
+    @include styleButton($color-blue-0, $color-blue-0, $pd-3, $pd-4);
+    &:hover{
+        @include styleButtonHover($color-blue-1,$color-white-1, $color-blue-1);
+    }
+}
+.ford-btnBlue1{
+    @include styleButton($color-blue-0, $color-blue-0, $pd-3, $pd-4);
+    &:hover{
+        @include styleButtonHover($color-blue-1,$color-white-1, $color-blue-1);
+    }
+}
+
+//Thêm mới(thắng)
+.ford-btnRed{
+    @include styleButton($color-red-0, $color-red-0, $pd-3, $pd-4);
+    &:hover{
+        @include styleButtonHover($color-red-0,$color-white-0, $color-red-0);
+    }
+}
